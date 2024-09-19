@@ -48,6 +48,7 @@ def write_output(df_to_write):
 
 def main():
     #load list of files as csv
+    print(argv)
     list_dfs, instructions = parse_args(argv)
     merged_df = merge_csvs (list_dfs)
     write_output(merged_df)
